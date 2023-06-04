@@ -13,11 +13,13 @@
                    FontSize="40"
                    Margin="0,0,0,50" />
             <Picker Title="Select a monkey"
+                    
                     ItemsSource="{Binding Monkeys}"
                     ItemDisplayBinding="{Binding Name}"
                     SelectedItem="{Binding SelectedMonkey}"
                     TextColor="#D4ADFC"
-                    TitleColor="#0C134F" />
+                    TitleColor="#D4ADFC
+                    " />
             <Frame BackgroundColor="#B799FF"
                    CornerRadius="15"
                    Margin="0,0,0,20">
