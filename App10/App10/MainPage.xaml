@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App10.MainPage"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout BackgroundColor="#0C134F">
+        <Frame BackgroundColor="#B799FF"
+               CornerRadius="15"
+               Margin="20,200,20,0">
+            <StackLayout   Spacing="20"
+                           VerticalOptions="Center">
+                <Label Text="Data Bindings"
+                       TextColor="#0C134F"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       Margin="0,0,0,50" />
+                <Button x:Name="btn1"
+                        Clicked="btn1_Clicked"
+                        Text="View-to-View Bindings"
+                        TextTransform="None"
+                        CornerRadius="20"
+                        FontSize="Large"
+                        BackgroundColor="#0C134F"
+                        TextColor="#D4ADFC" />
+                <Button x:Name="btn2"
+                        Clicked="btn2_Clicked"
+                        Text="Binding Mode"
+                        TextTransform="None"
+                        CornerRadius="20"
+                        FontSize="Large"
+                        BackgroundColor="#0C134F"
+                        TextColor="#D4ADFC" />
+                <Button x:Name="btn3"
+                        Clicked="btn3_Clicked"
+                        Text="ListView Binding"
+                        TextTransform="None"
+                        CornerRadius="20"
+                        FontSize="Large"
+                        BackgroundColor="#0C134F"
+                        TextColor="#D4ADFC" />
+                <Button x:Name="btn4"
+                        Clicked="btn4_Clicked"
+                        Text="Picker Binding"
+                        TextTransform="None"
+                        CornerRadius="20"
+                        FontSize="Large"
+                        BackgroundColor="#0C134F"
+                        TextColor="#D4ADFC" />
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>

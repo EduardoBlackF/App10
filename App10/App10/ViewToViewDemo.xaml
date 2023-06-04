@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App10.ViewToViewDemo"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#0C134F">
+            <Label Text="ROTATION"
+                   BindingContext="{x:Reference Name=slider}"
+                   Rotation="{Binding Path=Value}"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   TextColor="#D4ADFC" />
+            <Slider x:Name="slider"
+                    Maximum="360"
+                    VerticalOptions="CenterAndExpand"
+                    ThumbColor="#D4ADFC"
+                    MaximumTrackColor="White"
+                    MinimumTrackColor="White" />
+            <Label BindingContext="{x:Reference slider}"
+                   Text="{Binding Value, StringFormat='The angle is {0:F0} degrees'}"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   TextColor="#D4ADFC" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
